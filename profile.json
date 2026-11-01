@@ -12,6 +12,13 @@
       ]
     },
     "capabilities": {
+      "dev.ucp.shopping.cart": [
+        {
+          "version": "2026-08-25",
+          "spec": "https://ucp.dev/2026-08-25/specification/shopping/cart/",
+          "schema": "https://ucp.dev/2026-08-25/schemas/shopping/cart.json"
+        }
+      ],
       "dev.ucp.shopping.catalog.lookup": [
         {
           "version": "2026-08-25",
@@ -30,6 +37,6 @@
     "payment_handlers": {}
   },
   "name": "ToteBot",
-  "description": "Tote's test agent from Machine Commerce. It checks how well AI shopping agents can find, understand and shop a store, for a report requested through Tote. Its UCP calls only search and look up products. On the store's website it may also add items to a cart and open the checkout page, where it stops. It never completes a checkout, never pays, never creates an account and never sends personal details.",
+  "description": "Tote’s test agent from Machine Commerce. It checks how well AI shopping agents can find, understand and shop a store, for a report requested through Tote. Its UCP calls search and look up products, and may create, update or cancel a cart. It cancels any cart it creates. On the store’s website it may also add items to a cart and open the checkout page, where it stops. It never creates or completes a UCP checkout, never pays, never creates an account and never sends personal details.",
   "contact": "https://www.machinecommerce.co/products/tote"
 }
